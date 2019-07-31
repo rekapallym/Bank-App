@@ -7,7 +7,6 @@ public class Chase {
 		
 		chaseCust1.CustInfo();
 		System.out.println("\n");
-		
 		System.out.println("1. Deposit Funds | 2. Withdraw Funds | 3.Account Balance Info | 4. Exit ");
 		System.out.println("Please select one of the 4 Banking options");
 		

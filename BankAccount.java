@@ -57,11 +57,14 @@ public class BankAccount {
 	}
 	
 	public void withdrawFunds(double withdrawAmt) {
-		
-		if(withdrawAmt < this.balance && withdrawAmt < withdrawLimit  ) {
+		if(withdrawAmt > this.balance ) {
+			System.out.println("Low Balance");
+		}
+		else if(withdrawAmt < this.balance && withdrawAmt <= withdrawLimit  ) {
 			this.balance = this.balance - withdrawAmt;
 			System.out.println("Hey "+ this.custName + ", Your account balance after this withdrawal is:  " + this.balance);
-		}else {
+		} 
+		else {
 			System.out.println("Yo! Please visit bank to withdraw more than 100$");
 		}
 		
