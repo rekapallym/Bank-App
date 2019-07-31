@@ -76,7 +76,7 @@ public class BankAccount {
 				"Email Address: " + this.email + "\n" + "Phone number: " + this.phnNo );
 	}
 	
-	
+
 	
 
 }

@@ -6,13 +6,16 @@ public class Chase {
 		BankAccount chaseCust1 = new BankAccount();
 		
 		chaseCust1.CustInfo();
-		System.out.println("\n");
-		System.out.println("1. Deposit Funds | 2. Withdraw Funds | 3.Account Balance Info | 4. Exit ");
-		System.out.println("Please select one of the 4 Banking options");
 		
 		Scanner scan = new Scanner(System.in);
 		
-		int x = scan.nextInt();
+		int x = 0;
+		do {
+			System.out.println("\n");
+			System.out.println("1. Deposit Funds | 2. Withdraw Funds | 3.Account Balance Info | 4. Exit ");
+			System.out.println("Please select one of the 4 Banking options");
+			
+		  x = scan.nextInt();
 		
 	      switch(x) {
 			
@@ -34,6 +37,7 @@ public class Chase {
 			default:
 				System.out.println("Invalid Option");	
 			}
+		}while(x != 4);
 
 
 	}
